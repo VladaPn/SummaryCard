@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+.summary{ 
+    margin-block: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 20px;
+}
+.details{
+    padding-inline: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.details-container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-block: 30px;
+    padding: 12px 10px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.details-container svg{
+    margin-right: 8px;
+}
+.details h4{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+.span-holder{
+   color: hsl(224, 30%, 77%);
+   font-weight: 800; 
+}
+.bolder-num{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800; 
+}
+.reaction{
+    background-color: hsl(0, 100%, 95%);
+}
+.reaction p:first-of-type{
+    color: hsl(0, 100%, 67%);
+    font-weight: 800;
+}
+.memory{
+    background-color: hsl(39, 100%, 95%);
+}
+.memory p:first-of-type{
+    color: hsl(39, 100%, 56%);
+    font-weight: 800;
+}
+.verbal{
+    background-color: hsl(166, 100%, 95%);
+}
+.verbal p:first-of-type{
+    color: hsl(166, 100%, 37%);
+    font-weight: 800;
+}
+.visual{
+    background-color: hsl(234, 85%, 95%);
+}
+.visual p:first-of-type{
+    color: hsl(234, 85%, 45%);
+    font-weight: 800;
+}
+.details button{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    width: 100%;
+    padding: 13px 20px;
+    margin-top: 25px;
+    font-weight: 700;
+    border-radius: 20px;
+}
+.results{
+    background: hsla(241, 81%, 54%, 1);
+
+    background: linear-gradient(90deg, hsla(241, 81%, 54%, 1) 0%, hsla(252, 100%, 67%, 1) 100%, hsla(260, 72%, 82%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(241, 81%, 54%, 1) 0%, hsla(252, 100%, 67%, 1) 100%, hsla(260, 72%, 82%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(241, 81%, 54%, 1) 0%, hsla(252, 100%, 67%, 1) 100%, hsla(260, 72%, 82%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2E2BE9", endColorstr="#7857FF", GradientType=1 );
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.circle{
+    width: 66%;
+    aspect-ratio: 1;
+    padding: 20px;
+    border-radius: 50%;
+    margin-inline: auto;
+    background: hsla(252, 100%, 67%, 1);
+    margin-block: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+background: linear-gradient(90deg, hsla(252, 100%, 67%, 1) 0%, hsla(252, 100%, 67%, 1) 0%, hsla(241, 81%, 54%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(252, 100%, 67%, 1) 0%, hsla(252, 100%, 67%, 1) 0%, hsla(241, 81%, 54%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(252, 100%, 67%, 1) 0%, hsla(252, 100%, 67%, 1) 0%, hsla(241, 81%, 54%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7857FF", endColorstr="#7857FF", GradientType=1 );
+}
+.circle div h2{
+    font-size: 60px;
+    color: white;
+}
+.circle div p{
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+.results h5{
+    color: hsl(241, 100%, 89%);
+    font-size: 23px;
+}
+.results h3{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.results>p{
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+    padding: 10px;
+}
+.details button:hover{
+    color: white;
+    background: hsla(241, 81%, 54%, 1);
+
+    background: linear-gradient(90deg, hsla(241, 81%, 54%, 1) 0%, hsla(252, 100%, 67%, 1) 100%, hsla(260, 72%, 82%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(241, 81%, 54%, 1) 0%, hsla(252, 100%, 67%, 1) 100%, hsla(260, 72%, 82%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(241, 81%, 54%, 1) 0%, hsla(252, 100%, 67%, 1) 100%, hsla(260, 72%, 82%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#2E2BE9", endColorstr="#7857FF", GradientType=1 );
+    
+}
+@media(max-width:992px){
+    .container{
+        width: 70%;
+    }
+}
+@media(max-width:768px){
+    .container{
+        width: 80%;
+    }
+}
+@media(max-width:576px){
+    .summary{ 
+        margin-block: 180px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
